@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.887" timestamp="2022-09-30T12:37:07.149999" hostname="lap-pop"><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/main.py", line 268, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/main.py", line 322, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_callers.py", line 60, in _multicall
+    return outcome.get_result()
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_result.py", line 60, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/main.py", line 347, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_callers.py", line 60, in _multicall
+    return outcome.get_result()
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_result.py", line 60, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/runner.py", line 111, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/runner.py", line 124, in runtestprotocol
+    rep = call_and_report(item, "setup", log)
+  File "/home/smk97/.local/lib/python3.10/site-packages/_pytest/runner.py", line 221, in call_and_report
+    report: TestReport = hook.pytest_runtest_makereport(item=item, call=call)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/home/smk97/.local/lib/python3.10/site-packages/pluggy/_callers.py", line 55, in _multicall
+    gen.send(outcome)
+  File "/mnt/Data/Selenium/PythonSelFramework/tests/conftest.py", line 59, in pytest_runtest_makereport
+    _capture_screenshot(file_name)
+  File "/mnt/Data/Selenium/PythonSelFramework/tests/conftest.py", line 68, in _capture_screenshot
+    driver.get_screenshot_as_file(name)
+AttributeError: 'NoneType' object has no attribute 'get_screenshot_as_file'</error></testcase></testsuite></testsuites>
